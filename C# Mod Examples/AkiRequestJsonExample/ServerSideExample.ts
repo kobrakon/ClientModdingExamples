@@ -18,7 +18,7 @@ class Mod implements IPreAkiLoadMod
         // with the JSON data that the router sends
 
         // static router we'll use to pull a string from the json
-        dynamicRouterModService.registerStaticRouter(
+        staticRouterModService.registerStaticRouter(
             "exstaticmodrouterstring",
             [
                 {
@@ -77,7 +77,7 @@ class Mod implements IPreAkiLoadMod
         )
  
         // Dynamic router by which we'll post to the JSON
-        dynamicRouterModService.RegisterDynamicRouter(
+        dynamicRouterModService.registerDynamicRouter(
             "exdynamicjsonpostrouter",
             [
                 {
