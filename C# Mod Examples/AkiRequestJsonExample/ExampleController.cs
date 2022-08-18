@@ -12,7 +12,7 @@ namespace AkiRequestJsonExample
         public static string GetServerString()
         {
             var req = Aki.Common.Http.RequestHandler.GetJson("/ex-static-router/string"); // input the URL you set
-            return req; // no need to deserialize or parse single strings
+            return req.ToString(); // no need to parse bare strings
         }
         public static bool GetServerBool()
         {
