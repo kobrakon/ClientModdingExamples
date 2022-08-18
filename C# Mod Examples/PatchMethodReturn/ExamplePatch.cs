@@ -1,6 +1,7 @@
 using System.Reflection;
 using Aki.Reflection.Patching;
 
+// Here I'll showcase how to patch a mod to change its return value
 namespace PatchMethodReturn
 {   // Lets pretend this is an EFT class
     public class ExampleClass
