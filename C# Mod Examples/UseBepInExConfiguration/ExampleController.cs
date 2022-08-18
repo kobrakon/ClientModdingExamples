@@ -1,0 +1,30 @@
+using UnityEngine;
+
+namespace ConfigurationExample
+{
+    public class ConfigController : MonoBehaviour
+    {
+        void Update()
+        {
+            // If player has pressed key
+            if (Plugin.Keybind.Value.IsDown())
+            {
+                // put logic here
+            }
+
+            // If config number slider value meets condition
+            if (Plugin.NumberSlider.Value >= 0)
+            {
+                // put logic here
+            }
+
+            // You can also use the config value to set a field by doing 'field = Plugin.NumberSlider.Value;'
+
+            // If config boolean option is true
+            if (Plugin.Boolean.Value)
+            {
+                // put logic here
+            }
+        }
+    }
+}

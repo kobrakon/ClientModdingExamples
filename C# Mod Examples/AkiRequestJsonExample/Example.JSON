@@ -1,0 +1,9 @@
+{
+    "ExampleString" : "exampleString",
+    "ExampleBool" : true,
+    "ExampleInt": 32,
+    "ExampleArray" : [
+        "Example1",
+        "Example2"
+    ]
+}
