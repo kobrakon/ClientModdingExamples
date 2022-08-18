@@ -11,6 +11,14 @@ namespace ConfigurationExample
             {
                 // put logic here
             }
+            // Though, BepInEx keybinds are a bit weird in which they only register when no other keys are being pressed
+            // So another way of checking if they keybind is pressed that I recommend is to use the UnityEngine.InputLegacyModule
+            // as it will register the key being pressed regardless of if other keys are also pressed
+            if (Input.GetKey(Plugin.Keybind.Value.MainKey))
+            {
+                // put logic here
+            }
+            
 
             // If config number slider value meets condition
             if (Plugin.NumberSlider.Value >= 0)
