@@ -1,6 +1,7 @@
 using System.Reflection;
 using Aki.Reflection.Patching;
 
+// Here I'll showcase how to patch a method to get its return value whenever it's invoked
 namespace GetNonPublicMethodReturnEx
 {
     // Lets just pretend this is an EFT class
@@ -23,7 +24,7 @@ namespace GetNonPublicMethodReturnEx
             return typeof(ExampleClass).GetMethod("CalculateInt", BindingFlags.Instance | BindingFlags.NonPublic);
         }
 
-        // Create postfix method with PatchPostfix attribute and ref int for the method's result
+        // Create postfix method with PatchPostfix attribute and ref matching the type of the method's result
         [PatchPostfix]
         void Postfix(ref int __result)
         {
