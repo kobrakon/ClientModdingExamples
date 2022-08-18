@@ -26,7 +26,7 @@ class Mod implements IPreAkiLoadMod
                     action: (url, info, sessionID, output) => 
                     {
                         logger.info("Custom dynamic route hit")
-                        return JSON.stringify({response: json.ExampleString as string}); // this is what the server will send to your client mod when you request JSON
+                        return JSON.stringify({response: json.ExampleString}); // this is what the server will send to your client mod when you request JSON
                     }
                 }
             ],
