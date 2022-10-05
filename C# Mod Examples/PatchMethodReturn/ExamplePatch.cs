@@ -21,7 +21,7 @@ namespace PatchMethodReturn
 
         // Create postfix method with PatchPostfix attribute, set parameter as ref with the type of the requested method return
         [PatchPostfix]
-        void PostFix(ref string __result)
+        static void PostFix(ref string __result)
         {
             __result = "PatchedString"; // set to what we want the method to return
         }
