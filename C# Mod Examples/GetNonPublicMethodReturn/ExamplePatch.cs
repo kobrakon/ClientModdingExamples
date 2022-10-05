@@ -26,7 +26,7 @@ namespace GetNonPublicMethodReturnEx
 
         // Create postfix method with PatchPostfix attribute and ref matching the type of the method's result
         [PatchPostfix]
-        void Postfix(ref int __result)
+        static void Postfix(ref int __result)
         {
             number = __result; // Get the return value from CalculateInt and set it to our field
         }
